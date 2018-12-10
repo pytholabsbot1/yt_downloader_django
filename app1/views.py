@@ -16,7 +16,7 @@ def index(request):
             res['views'] = "views: "+str(video.viewcount)
             res['Download_text'] = "Download"
             res['url'] = video.getbestaudio().url if(frmt=='audio') else video.getbest().url
-
+            res['cl_'] = "linkclass"
 
         except Exception as e:
             res['title'] = e
