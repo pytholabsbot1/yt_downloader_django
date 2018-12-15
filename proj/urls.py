@@ -19,5 +19,6 @@ from app1 import views
 
 urlpatterns = [
     url(r'^$',views.index,name='index'),
+    url(r'artist/',views.artist,name='artist'),
     url(r'admin/', admin.site.urls),
 ]
