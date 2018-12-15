@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+<head>
+	<title>art_shifter</title>
+</head>
+<body>
+
+	<h1>Welcome you made it</h1>
+
+	{% block content %}
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="myfile">
+    <button type="submit">Upload</button>
+  </form>
+
+ 	{% endblock %}
+
+</body>
+</html>
